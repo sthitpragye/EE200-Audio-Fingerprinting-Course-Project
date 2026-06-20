@@ -11,16 +11,16 @@ This repository contains the complete project submission for the **EE200** cours
 ## Module Overview
 
 ### Q1: Frequency Forensics & Digital Detective
-* [cite_start]**Frequency Forensics ('The Ghost Signal'):** Recovers images distorted by periodic interference using 2D DFT analysis and notch filtering[cite: 206, 215].
-* [cite_start]**Digital Detective ('Missing Boundaries'):** Employs Sobel operators to compute intensity gradients and detect structural boundaries, utilizing Gaussian smoothing to suppress noise-induced false edges[cite: 508, 510, 526].
+**Frequency Forensics ('The Ghost Signal'):** Recovers images distorted by periodic interference using 2D DFT analysis and notch filtering.
+**Digital Detective ('Missing Boundaries'):** Employs Sobel operators to compute intensity gradients and detect structural boundaries, utilizing Gaussian smoothing to suppress noise-induced false edges.
 
 ### Q2: The Midnight Episode ('Catching the Arrhythmia')
 * Analyzes ECG recordings from Holter monitors to identify arrhythmia onset.
-* [cite_start]**Methodology:** Implements windowing for template generation and utilizes normalized cross-correlation ($\rho(m)$) to compare healthy heartbeats against the input recording, flagging structural deviations[cite: 60, 83, 581].
+**Methodology:** Implements windowing for template generation and utilizes normalized cross-correlation to compare healthy heartbeats against the input recording, flagging structural deviations.
 
 ### Q3: Sonic Signatures ('Magical Mystery Tune')
-* [cite_start]**Signal Identification:** Builds an audio fingerprinting system using spectrograms and constellation peak hashing for robust song identification[cite: 145, 154].
-* [cite_start]**Application ('Zapptain America'):** A deployed Streamlit-based interactive application that provides visual analysis, including spectrograms and offset histograms, for both single-clip and batch-mode processing[cite: 165, 187, 188].
+**Signal Identification:** Builds an audio fingerprinting system using spectrograms and constellation peak hashing for robust song identification.
+**Application ('Zapptain America'):** A deployed Streamlit-based interactive application that provides visual analysis, including spectrograms and offset histograms, for both single-clip and batch-mode processing.
 
 ---
 
