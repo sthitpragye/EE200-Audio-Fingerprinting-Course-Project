@@ -20,7 +20,9 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-DB_PATH = "song_fingerprints.db"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_PATH = os.path.join(BASE_DIR, "song_fingerprints_peaks_in_pairs.db")
+# DB_PATH = "song_fingerprints.db"
 MIN_DELTA_T = 0.1
 MAX_DELTA_T = 1.0
 NPERSEG = 1024
@@ -99,25 +101,6 @@ html, body, .stApp {
     color: #3D5A80;
     letter-spacing: 2px;
     text-transform: uppercase;
-}
-.scanline-wrap {
-    height: 3px;
-    background: #0F2040;
-    border-radius: 2px;
-    overflow: hidden;
-    margin-top: 18px;
-    position: relative;
-}
-.scanline-bar {
-    height: 100%;
-    width: 30%;
-    background: linear-gradient(90deg, transparent, #F5A623, #FFE299, #F5A623, transparent);
-    animation: scan 3s ease-in-out infinite;
-    border-radius: 2px;
-}
-@keyframes scan {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(430%); }
 }
 
 /* TABS */
@@ -333,7 +316,6 @@ st.markdown("""
     <div class="hero-badge">EE200 &nbsp;·&nbsp; Signals, Systems &amp; Networks &nbsp;</div>
     <div class="hero-title">Audio <span>Fingerprinting</span></div>
     <div class="hero-sub">Shazam-style identification via spectrogram constellation hashing</div>
-    <div class="scanline-wrap"><div class="scanline-bar"></div></div>
 </div>
 """, unsafe_allow_html=True)
 
